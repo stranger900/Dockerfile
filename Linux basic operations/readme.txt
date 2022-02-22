@@ -39,4 +39,5 @@ apt install nginx 1> install.log 2>install_err.log        # apt install nginx 2>
 cat install_err.log 
 
 Allow john to run sudo commands.
+sudo usermod -aG sudo john
 
