@@ -41,3 +41,7 @@ cat install_err.log
 Allow john to run sudo commands.
 sudo usermod -aG sudo john
 
+Create cron that runs ~/tools/scripts/script.sh every 2 minutes from the user john.
+crontab -e
+# use nano
+*/2 * * * *  /home/john/tools/scripts/script.sh
