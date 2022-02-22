@@ -35,5 +35,7 @@ ps -aux | grep nginx
 kill 32625
 
 Try to perform yum install nginx (without sudo) and redirect stdout to install.log and stderr to install_err.log.
+apt install nginx 1> install.log 2>install_err.log
+cat install_err.log 
 
-
+Allow john to run sudo commands.
